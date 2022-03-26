@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { chatGet } from "../controllers/chat";
+import { uploadGet } from "../controllers/upload";
 
 const router = Router();
 
-router.get('/', chatGet);
+router.get('/', uploadGet);
 
 export default router;

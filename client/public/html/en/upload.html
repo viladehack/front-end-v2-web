@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="icon" href='../assets/images/ITico.ico'>
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' href='css/upload.css'>
+</head>
+
+<body>
+    <nav id='nav'>
+        <a href='/'><img src='./assets/images/IT logo.png' id='nav-img'></a>
+        <ul>
+            <a href='/nivell-1'>
+                <li class='text1 links'>Nivell 1 ⭐️</li>
+            </a>
+            <a href='/nivell-2'>
+                <li class='text1 links'>Nivell 2 ⭐️⭐️</li>
+            </a>
+            <a href='/nivell-3'>
+                <li class='text1 links'>Nivell 3 ⭐️⭐️⭐️</li>
+            </a>
+        </ul>
+    </nav>
+    <main id='main'>
+        <div id='form-container'>
+            <form id='sendImg' action='upload' method='POST' enctype='multipart/form-data'>
+                <input type='file' name='image'>
+                <button type='submit'>Enviar</button>
+            </form>
+        </div>
+    </main>
+    <footer id='footer'>
+        <p>Creat per <a id='name-link' target='_BLANK' href='http://daniel-espanadero.com'>Daniel Españadero
+                Fernández</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>

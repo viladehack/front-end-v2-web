@@ -5,7 +5,8 @@ import path from 'path';
 import routerLogin from '../routes/login';
 import routerForgotPass from '../routes/forgot-pass';
 import routerRegiter from '../routes/register';
-import routerChat from '../routes/chat';
+import routerMain from '../routes/main';
+import routerUpload from '../routes/upload';
 import router404 from '../routes/404';
 
 class Server {
@@ -15,7 +16,8 @@ class Server {
         login: '/login',
         forgotPass: '/forgot-pass',
         register: '/register',
-        chat: '/chat',
+        main: '/main',
+        upload: '/upload',
         error404: '*'
     }
 
@@ -57,7 +59,8 @@ class Server {
         this.app.use(this.path.login, routerLogin);
         this.app.use(this.path.forgotPass, routerForgotPass);
         this.app.use(this.path.register, routerRegiter);
-        this.app.use(this.path.chat, routerChat);
+        this.app.use(this.path.chat, routerMain);
+        this.app.use(this.path.upload, routerUpload);
         this.app.use(this.path.error404, router404);
     }
 

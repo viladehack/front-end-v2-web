@@ -2,7 +2,7 @@
     window.addEventListener('load', () => {
         const miFormulario: any = document.querySelector('#login-form-container')!;
 
-        const url: string = 'http://localhost:5000/auth/login'
+        const url: string = 'http://localhost:8000/login'
 
 
 
@@ -26,7 +26,7 @@
                         return console.error(msg);
                     }
                     localStorage.setItem('token', token);
-                    window.location.href = '/chat';
+                    window.location.href = '/main';
                 })
                 .catch(err => {
                     console.log(err);
@@ -48,7 +48,7 @@
                 .then(resp => resp.json())
                 .then(({ token }) => {
                     localStorage.setItem('token', token);
-                    window.location.href = '/chat';
+                    window.location.href = '/main';
                 })
                 .catch(console.log);
         };

@@ -2,7 +2,7 @@
     window.addEventListener('load', () => {
 
         const login: any = document.querySelector('#login-form-container')!;
-        const URL: string = 'http://localhost:5000/register';
+        const URL: string = 'http://localhost:8000/register';
 
         login.addEventListener('submit', (ev: any) => {
             ev.preventDefault();

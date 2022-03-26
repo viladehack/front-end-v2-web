@@ -1,9 +1,9 @@
 /* General styles */
 #body {
-    color: #516188;
+    color: #fff;
     width: 100vw;
     height: 100vh;
-    background: #f7fbfc;
+    background: #131313;
     overflow: hidden;
 }
 
@@ -98,12 +98,12 @@
 }
 
 #link {
-    color: #000;
+    color: #999;
     margin: .2em;
 }
 
 #link:hover {
-    color: #444;
+    color: #eee;
 }
 
 #img-container {
@@ -128,7 +128,7 @@
         border-radius: 30px;
         width: 90%;
         height: 80%;
-        background-color: #e2ecf6;
+        background-color: rgba(50,50,50, 255);
         box-shadow: 1px 1px 1px #51618855 inset;
         overflow: hidden;
     }
