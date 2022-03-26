@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'SecularOne';
+    src: url('../assets/fonts/SecularOne-Regular.ttf');
+}
+
+.input {
+    padding: 0 2em 0 2em;
+    color: #516188;
+    border-radius: 1em;
+    background-color: #fff;
+    font-family: 'SecularOne';
+    font-size: .8em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #516188;
+}
+
+.input:hover {
+    background-color: #51618899;
+    border-bottom: 2px solid #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.input:focus {
+    background-color: #7885a8;
+    color: #fff;
+    border: none;
+}

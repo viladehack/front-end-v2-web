@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="cat">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/activa-ico.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Activa Chat</title>
+    <script type="text/javascript" src="./dist/auth.js"></script>
+</head>
+
+<body id="body" class="flex">
+    <!-- <header id="lang">
+        <a href="./html/es/login.html">Es</a>
+        <p>|</p>
+        <a href="./html/cat/login.html">Cat</a>
+        <p>|</p>
+        <a href="#">En</a>
+    </header> -->
+    <main id="main">
+        <div id="login-container" class="flex">
+            <div id="login-cont-inside" class="flex">
+                <h1>Activa Chat</h1>
+                <!-- <h2>Login</h2> -->
+                <div id="error"></div>
+                <form id="login-form-container">
+                    <input class="input measures-input" type="email" name="email" placeholder="Email" required>
+                    <input class="input measures-input" type="password" name="password" placeholder="password" required>
+                    <button class="button" type="submit">Login</button>
+                </form>
+                <br>
+                <p>----OR----</p>
+                <br>
+                <div id="g_id_onload" data-client_id="262719378408-8u304bnuretvdp264ipa54rsr5ravht2.apps.googleusercontent.com" data-auto_prompt="false" data-callback="handleCredentialResponse">
+                </div>
+                <div class="g_id_signin" data-type="standard" data-size="large" data-theme="outline"
+                    data-text="sign_in_with" data-shape="rectangular" data-logo_alignment="left">
+                </div>
+                <br>
+                <a href="/forgot-pass" id="link">Forgot my password</a>
+                <div id="register">
+                    <p>If you don't have an account, create</p>
+                    <a href="/register"><button>Register</button></a>
+                </div>
+            </div>
+        </div>
+        <div id="img-container" class="flex">
+            <img src="./assets/img/software-1.jpeg" alt="software programmer">
+        </div>
+    </main>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <script>
+        function handleCredentialResponse(response) {
+
+            // Google token : ID_TOKEN
+            console.log('id_token', response.credential);
+
+        }
+    </script>
+</body>
+
+</html>
